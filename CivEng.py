@@ -2,7 +2,7 @@ import math as m
 
 
 
-
+print(' --- PAGE 1 ---')
 ## First Image
 
 b = 0.35
@@ -112,22 +112,24 @@ print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
 
 
 #PAGE 2 Circle Stuff
+print(' --- PAGE 2 ---')
+
 ## First Image
 a = 1.2
 
-A = m.pi()*a**2
+A = m.pi*a**2
 Xc = a
 Yc = a
 
-Ixc = (m.pi()*a**4)/4
+Ixc = (m.pi*a**4)/4
 
-Iyc = (m.pi()*a**4)/4 
+Iyc = (m.pi*a**4)/4 
 
-Ic = (5*m.pi()*a**4)/4
+Ic = (5*m.pi*a**4)/4
 
-Iy = (5*m.pi()*a**4)/4
+Iy = (5*m.pi*a**4)/4
 
-J = (m.pi()*a**4)/2
+J = (m.pi*a**4)/2
 
 print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
 
@@ -137,19 +139,19 @@ print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
 a = 3.1
 b= 3.0
 
-A = m.pi()*(a**2 - b**2)
+A = m.pi*(a**2 - b**2)
 Xc = a
 Yc = a
 
-Ixc = (m.pi()*(a**4 - b**4))/4
+Ixc = (m.pi*(a**4 - b**4))/4
 
-Iyc = (m.pi()*(a**4 - b**4))/4 
+Iyc = (m.pi*(a**4 - b**4))/4 
 
-Ic = ((5*m.pi()*a**4)/4) - (m.pi()*a**2*b**2) - ((m.pi()*b**4)/4) 
+Ic = ((5*m.pi*a**4)/4) - (m.pi*a**2*b**2) - ((m.pi*b**4)/4) 
 
-Iy = ((5*m.pi()*a**4)/4) - (m.pi()*a**2*b**2) - ((m.pi()*b**4)/4)
+Iy = ((5*m.pi*a**4)/4) - (m.pi*a**2*b**2) - ((m.pi*b**4)/4)
 
-J = (m.pi()*(a**4-b**4))/2
+J = (m.pi*(a**4-b**4))/2
 
 print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
 
@@ -158,17 +160,17 @@ print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
 a = 0.75
 
 
-A = (m.pi()*a**2)/2
+A = (m.pi*a**2)/2
 Xc = a
-Yc = (4*a)/(3*m.pi())
+Yc = (4*a)/(3*m.pi)
 
-Ixc = (a**4*(9*m.pi()**2 - 64))/(72*m.pi())
+Ixc = (a**4*(9*m.pi**2 - 64))/(72*m.pi)
 
-Iyc = (m.pi()*a**4)/8 
+Iyc = (m.pi*a**4)/8 
 
-Ic = (m.pi()*a**4)/8 
+Ic = (m.pi*a**4)/8 
 
-Iy = (5*m.pi()*a**4)/8
+Iy = (5*m.pi*a**4)/8
 
 
 print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
@@ -201,15 +203,16 @@ Xc = ((2*a)/3)*((m.sin(theta)**3)/(theta - (m.sin(theta)*m.cos(theta))))
 
 Yc = 0
 
-Ic = (A*a**2/4)*(1-((2*m.sin(theta)**3*cos(theta))/((3*theta)-(3*m.sin(theta)*m.cos(theta))))) 
+Ic = (A*a**2/4)*(1-((2*m.sin(theta)**3*m.cos(theta))/((3*theta)-(3*m.sin(theta)*m.cos(theta))))) 
 
-Iy = (A*a**2/4)*(1-((2*m.sin(theta)**3*cos(theta))/((theta)-(3*m.sin(theta)*m.cos(theta))))) 
+Iy = (A*a**2/4)*(1-((2*m.sin(theta)**3*m.cos(theta))/((theta)-(3*m.sin(theta)*m.cos(theta))))) 
 
 print(A, Xc, Yc, Ic, Iy)
 
 
 #SHEET 3
 #Diagram 1
+print(' --- PAGE 3 ---')
 
 a = 1.4
 b = 0.15
@@ -226,6 +229,11 @@ Ix = Ixc
 
 Iy = (4*a**3*b)/7
 
+print(A, Xc, Yc, Ixc, Iyc, Ix, Iy)
+
+
+
+
 #  Diagram 2
 
 a = 2.75
@@ -239,14 +247,46 @@ Ix = (2*a*b**2)/15
 
 Iy = (2*a**3*b)/7
 
+print(A, Xc, Yc, Ix, Iy)
+
+
+
+
 # Diagram 3
 
 
+b = 2.50
+h = 0.75
+n = 2
 
 
+A = (b*h)/(n+1)
+Xc = ((n+1)/(n+2))*b
+Yc = (h/2)*((n+1)/(2*n+1))
+
+Ix = (b*h**3)/(3*((3*n) +1))
+
+Iy = (h*b**3)/(n+3)
 
 
+print(A, Xc, Yc, Ix, Iy)
 
 
+# Diagram 4
 
+
+b = 2.50
+h = 1.50
+n = 2.0
+
+
+A = ((n)/(n+1))*(b*h)
+Xc = ((n+1)/(2*n+1))*b
+Yc = ((n+1)/(2*(n+2)))*h
+
+Ix = ((n)/(3*(n+3)))*b*h**3
+
+Iy = ((n)/(3*n+1))*b**3*h
+
+print(A, Xc, Yc, Ix, Iy)
 
