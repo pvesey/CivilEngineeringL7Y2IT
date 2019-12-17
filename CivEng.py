@@ -1,12 +1,17 @@
 import math as m
 
 
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
+
+
+
+print(' --------------')
 print(' --- PAGE 1 ---')
+print(' --------------')
 ## First Image
 
 b = 0.35
-
 h = 0.15
 
 
@@ -23,8 +28,17 @@ Ic = (b*(h**3))/12
 Iy = (h*(b**3))/4
 
 
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
-
+#print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 ## Second Image
 b = 0.7
@@ -43,8 +57,17 @@ Ic = (b*(h**3))/12
 
 Iy = (h*(b**3))/12
 
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
-
+# print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 # Third Image
 
@@ -65,7 +88,17 @@ Ic = (b*(h**3))/12
 
 Iy = ((b*h)*((b**2) +(a*b) + (a**2)))/12
 
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
+# print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 #Fourth Figure
 
@@ -87,9 +120,18 @@ Iy = (h*(b**3))/3
 
 J = ((b*h)*((b**2) + (h**2)))/12
 
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
-
-
+# print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print('J:\t', J)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 # Fifth Figure
 
@@ -107,12 +149,23 @@ Iyc = (a*b*m.sin(theta)*(b**2 + (a**2*m.cos(theta)**2)))/12
 Ix = (a**3 *b * (m.sin(theta)**3))/3
 Iy = ((a*b*m.sin(theta)*(b + (a*m.cos(theta))**2))/3) - (a**2 * b**2 * m.sin(theta)* m.cos(theta))
 
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
-
+# print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ix:\t', Ix)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 
 #PAGE 2 Circle Stuff
+print(' --------------')
 print(' --- PAGE 2 ---')
+print(' --------------')
 
 ## First Image
 a = 1.2
@@ -130,10 +183,19 @@ Ic = (5*m.pi*a**4)/4
 Iy = (5*m.pi*a**4)/4
 
 J = (m.pi*a**4)/2
-
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
-
-
+##### TESTS TEST TEST
+# print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print('J:\t', J)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 ## Second Image
 a = 3.1
@@ -153,8 +215,18 @@ Iy = ((5*m.pi*a**4)/4) - (m.pi*a**2*b**2) - ((m.pi*b**4)/4)
 
 J = (m.pi*(a**4-b**4))/2
 
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
-
+# print(A, Xc, Yc, Ixc, Iyc, Ic, Iy, J)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print('J:\t', J)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 ## Third Image
 a = 0.75
@@ -173,7 +245,17 @@ Ic = (m.pi*a**4)/8
 Iy = (5*m.pi*a**4)/8
 
 
-print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
+# print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 
 
@@ -190,7 +272,15 @@ Ic = (a**4*(theta - m.sin(theta)*m.cos(theta)))/4
 Iy = (a**4*(theta + m.sin(theta)*m.cos(theta)))/4
 
 
-print(A, Xc, Yc, Ic, Iy)
+# print(A, Xc, Yc, Ic, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 
 ## Fifth Image
@@ -207,12 +297,21 @@ Ic = (A*a**2/4)*(1-((2*m.sin(theta)**3*m.cos(theta))/((3*theta)-(3*m.sin(theta)*
 
 Iy = (A*a**2/4)*(1-((2*m.sin(theta)**3*m.cos(theta))/((theta)-(3*m.sin(theta)*m.cos(theta))))) 
 
-print(A, Xc, Yc, Ic, Iy)
-
+# print(A, Xc, Yc, Ic, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ic:\t', Ic)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 #SHEET 3
 #Diagram 1
+print(' --------------')
 print(' --- PAGE 3 ---')
+print(' --------------')
 
 a = 1.4
 b = 0.15
@@ -229,7 +328,17 @@ Ix = Ixc
 
 Iy = (4*a**3*b)/7
 
-print(A, Xc, Yc, Ixc, Iyc, Ix, Iy)
+# print(A, Xc, Yc, Ixc, Iyc, Ix, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ixc:\t', Ixc)
+print('Iyc:\t', Iyc)
+print('Ix:\t', Ix)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 
 
@@ -247,7 +356,15 @@ Ix = (2*a*b**2)/15
 
 Iy = (2*a**3*b)/7
 
-print(A, Xc, Yc, Ix, Iy)
+# print(A, Xc, Yc, Ix, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ix:\t', Ix)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 
 
@@ -269,7 +386,15 @@ Ix = (b*h**3)/(3*((3*n) +1))
 Iy = (h*b**3)/(n+3)
 
 
-print(A, Xc, Yc, Ix, Iy)
+# print(A, Xc, Yc, Ix, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ix:\t', Ix)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
 
 # Diagram 4
@@ -288,5 +413,13 @@ Ix = ((n)/(3*(n+3)))*b*h**3
 
 Iy = ((n)/(3*n+1))*b**3*h
 
-print(A, Xc, Yc, Ix, Iy)
+# print(A, Xc, Yc, Ix, Iy)
+print(' --------------')
+print('A:\t', A)
+print('Xc:\t', Xc)
+print('Yc:\t', Yc)
+print('Ix:\t', Ix)
+print('Iy:\t', Iy)
+print(' --------------')
+A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
 
