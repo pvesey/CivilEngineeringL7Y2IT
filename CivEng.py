@@ -147,7 +147,16 @@ Ixc = (a**3 *b * (m.sin(theta)**3))/12
 Iyc = (a*b*m.sin(theta)*(b**2 + (a**2*m.cos(theta)**2)))/12
 
 Ix = (a**3 *b * (m.sin(theta)**3))/3
-Iy = ((a*b*m.sin(theta)*(b + (a*m.cos(theta))**2))/3) - (a**2 * b**2 * m.sin(theta)* m.cos(theta))
+Iy = (((a*b*m.sin(theta))*((b + (a*m.cos(theta)))**2))/3) - ((a**2 * b**2 * m.sin(theta)* m.cos(theta))/6)
+print('CORRECTION')
+print(Iy)
+print('CORRECTION')
+
+# ab Sin(theta)
+FirstPart = ((a*b*m.sin(theta)) * (b+(a *m.sin(theta)))**2)/3
+SecondPart = (a**2 * b**2 * m.sin(theta) * m.cos(theta))/6
+
+Iy = FirstPart - SecondPart 
 
 # print(A, Xc, Yc, Ixc, Iyc, Ic, Iy)
 print(' --------------')
@@ -293,7 +302,17 @@ Xc = ((2*a)/3)*((m.sin(theta)**3)/(theta - (m.sin(theta)*m.cos(theta))))
 
 Yc = 0
 
-Ic = (A*a**2/4)*(1-((2*m.sin(theta)**3*m.cos(theta))/((3*theta)-(3*m.sin(theta)*m.cos(theta))))) 
+Ix = ((A*a**2)/4)*(1-((2*(m.sin(theta))**3*m.cos(theta))/((3*theta)-(3*m.sin(theta)*m.cos(theta))))) 
+
+##
+##  Q * [1- R/S]
+##
+
+Q = (A*a**2)/4
+R = 2 * (m.sin(theta)**3) * m.cos(theta)
+S = (3*theta) - (3 * m.sin(theta) * m.cos(theta))
+IxRework = Q * (1 - (R/S))
+
 
 Iy = (A*a**2/4)*(1-((2*m.sin(theta)**3*m.cos(theta))/((theta)-(3*m.sin(theta)*m.cos(theta))))) 
 
@@ -302,7 +321,9 @@ print(' --------------')
 print('A:\t', A)
 print('Xc:\t', Xc)
 print('Yc:\t', Yc)
-print('Ic:\t', Ic)
+print('Ix:\t', Ix)
+print('IxRework:\t', IxRework)
+print('1.39--10-5')
 print('Iy:\t', Iy)
 print(' --------------')
 A = Xc = Yc = Ixc = Iyc = Ic = Iy = Ix = J = 0
@@ -320,7 +341,7 @@ A = (4*a*b)/3
 Xc = (3*a)/5
 Yc = 0
 
-Ixc = (4*a*b**2)/15
+Ixc = (4*a*b**3)/15
 
 Iyc = (16*a**3*b)/175
 
@@ -352,7 +373,7 @@ A = (2*a*b)/3
 Xc = (3*a)/5
 Yc = (3*b)/8
 
-Ix = (2*a*b**2)/15
+Ix = (2*a*b**3)/15
 
 Iy = (2*a**3*b)/7
 
